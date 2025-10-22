@@ -1,0 +1,31 @@
+.footer-custom {
+  background-color: #343a40;
+  color: white;
+  padding: 2rem 0;
+  margin-top: auto;
+}
+
+.footer-custom h5,
+.footer-custom h6 {
+  color: #007bff;
+  margin-bottom: 1rem;
+}
+
+.footer-custom ul li {
+  margin-bottom: 0.5rem;
+}
+
+.footer-custom ul li a {
+  color: #adb5bd;
+  text-decoration: none;
+  transition: color 0.3s ease;
+}
+
+.footer-custom ul li a:hover {
+  color: #007bff;
+}
+
+.footer-custom hr {
+  border-color: #495057;
+  margin: 1.5rem 0;
+}
