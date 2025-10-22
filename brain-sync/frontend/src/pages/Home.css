@@ -1,0 +1,175 @@
+.home-page {
+  min-height: 100vh;
+}
+
+.hero-section {
+  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+  color: white;
+  padding: 4rem 0;
+}
+
+.min-vh-50 {
+  min-height: 50vh;
+}
+
+.hero-title {
+  font-size: 3.5rem;
+  font-weight: 700;
+  margin-bottom: 1.5rem;
+  line-height: 1.2;
+}
+
+.hero-subtitle {
+  font-size: 1.25rem;
+  margin-bottom: 2rem;
+  opacity: 0.9;
+  line-height: 1.6;
+}
+
+.hero-buttons {
+  display: flex;
+  gap: 1rem;
+  flex-wrap: wrap;
+}
+
+.hero-image {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.hero-placeholder {
+  width: 300px;
+  height: 200px;
+  background: rgba(255, 255, 255, 0.1);
+  border-radius: 15px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  backdrop-filter: blur(10px);
+  border: 1px solid rgba(255, 255, 255, 0.2);
+}
+
+.hero-placeholder i {
+  font-size: 4rem;
+  color: rgba(255, 255, 255, 0.8);
+}
+
+.search-section {
+  border-bottom: 1px solid #dee2e6;
+}
+
+.search-input {
+  border-radius: 25px 0 0 25px;
+  border-right: none;
+  padding: 0.75rem 1.25rem;
+  font-size: 1.1rem;
+}
+
+.search-input:focus {
+  box-shadow: none;
+  border-color: #007bff;
+}
+
+#search-button {
+  border-radius: 0 25px 25px 0;
+  padding: 0.75rem 1.5rem;
+}
+
+.filter-controls {
+  display: flex;
+  gap: 2rem;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin-top: 1rem;
+}
+
+.filter-group {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.filter-label {
+  margin: 0;
+  font-weight: 600;
+  color: #495057;
+}
+
+.filter-select {
+  min-width: 150px;
+  border-radius: 20px;
+  border: 1px solid #ced4da;
+  padding: 0.5rem 1rem;
+}
+
+.filter-select:focus {
+  box-shadow: 0 0 0 0.2rem rgba(0, 123, 255, 0.25);
+  border-color: #007bff;
+}
+
+.videos-section {
+  background-color: #f8f9fa;
+}
+
+.section-title {
+  font-size: 2.5rem;
+  font-weight: 600;
+  color: #343a40;
+  margin-bottom: 0;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .hero-title {
+    font-size: 2.5rem;
+  }
+  
+  .hero-subtitle {
+    font-size: 1.1rem;
+  }
+  
+  .hero-buttons {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+  
+  .hero-buttons .btn {
+    width: 100%;
+    margin-bottom: 0.5rem;
+  }
+  
+  .filter-controls {
+    flex-direction: column;
+    align-items: center;
+    gap: 1rem;
+  }
+  
+  .filter-group {
+    flex-direction: column;
+    text-align: center;
+  }
+  
+  .section-title {
+    font-size: 2rem;
+  }
+}
+
+@media (max-width: 576px) {
+  .hero-section {
+    padding: 2rem 0;
+  }
+  
+  .hero-title {
+    font-size: 2rem;
+  }
+  
+  .hero-placeholder {
+    width: 250px;
+    height: 150px;
+  }
+  
+  .hero-placeholder i {
+    font-size: 3rem;
+  }
+}
