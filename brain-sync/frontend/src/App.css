@@ -2,11 +2,14 @@
   min-height: 100vh;
   display: flex;
   flex-direction: column;
+  position: relative;
 }
 
 .main-content {
   flex: 1;
-  background-color: #f8f9fa;
+  background: linear-gradient(to bottom, #f8f9fa 0%, #e9ecef 100%);
+  position: relative;
+  z-index: 1;
 }
 
 /* Global Styles */
@@ -25,6 +28,7 @@ body {
   justify-content: center;
   align-items: center;
   min-height: 200px;
+  animation: fadeInUp 0.5s ease-out;
 }
 
 /* Error States */
@@ -60,17 +64,32 @@ body {
 
 /* Animation Classes */
 .fade-in {
-  animation: fadeIn 0.3s ease-in;
+  animation: fadeIn 0.5s ease-in;
 }
 
 @keyframes fadeIn {
   from {
     opacity: 0;
-    transform: translateY(10px);
+    transform: translateY(20px);
   }
   to {
     opacity: 1;
     transform: translateY(0);
+  }
+}
+
+.scale-in {
+  animation: scaleIn 0.4s ease-out;
+}
+
+@keyframes scaleIn {
+  from {
+    opacity: 0;
+    transform: scale(0.9);
+  }
+  to {
+    opacity: 1;
+    transform: scale(1);
   }
 }
 

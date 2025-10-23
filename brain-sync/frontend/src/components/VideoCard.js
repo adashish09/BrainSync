@@ -7,7 +7,7 @@ import './VideoCard.css';
 
 const VideoCard = memo(({ video, viewMode = 'grid' }) => {
   const navigate = useNavigate();
-  const { userRole } = useAuth();
+  const { currentUser, userRole } = useAuth();
   const { deleteVideo } = useVideo();
   const [isDeleting, setIsDeleting] = useState(false);
   const [imageLoaded, setImageLoaded] = useState(false);
